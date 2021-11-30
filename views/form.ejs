@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project form</title>
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+  
+<body>
+    
+    <h1>To Upload Image on mongoDB</h1>
+    <hr>
+    <div>
+        <form action="/projects" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="name">Project Title</label>
+                <input type="text" id="name" placeholder="Name" 
+                       value="" name="name" required>
+            </div>
+            <div>
+                <label for="desc">Project Description</label>
+                <textarea id="desc" name="desc" value="" rows="2" 
+                          placeholder="Description" required>
+                </textarea>
+            </div>
+            <div>
+                <label for="privacy">Project Privacy</label>
+                <input id="privacy" name="privacy" value=""
+                          placeholder="privacy" required>
+                </input>
+            </div>
+            <div>
+                <label for="status">Project Status</label>
+                <input id="status" name="status" value="" 
+                          placeholder="Status" >
+                </input>
+            </div>
+            <div>
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" 
+                       name="image" value="" required>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+  
+    <hr>
+  
+</body>
+  
+</html>
